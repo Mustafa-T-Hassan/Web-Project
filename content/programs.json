@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "id": "bsc-cs",
+      "degree": "BSc",
+      "title_en": "BSc in Computer Science",
+      "title_ar": "بكالوريوس في علوم الحاسوب",
+      "overview_en": "A four-year undergraduate program covering algorithms, data structures, software engineering, and systems.",
+      "overview_ar": "برنامج بكالوريوس لمدة أربع سنوات يشمل الخوارزميات وهياكل البيانات والهندسة البرمجية والأنظمة.",
+      "outcomes_en": [
+        "Apply core CS principles",
+        "Design and evaluate software systems",
+        "Communicate effectively"
+      ],
+      "outcomes_ar": [
+        "تطبيق مبادئ علوم الحاسوب",
+        "تصميم وتقييم الأنظمة البرمجية",
+        "التواصل الفعّال"
+      ],
+      "coordinator_en": "Dr. Jane Doe",
+      "coordinator_ar": "د. جين دو",
+      "curriculum_en": [
+        {
+          "course": "Intro to Programming",
+          "credits": "3"
+        },
+        {
+          "course": "Data Structures",
+          "credits": "3"
+        },
+        {
+          "course": "Databases",
+          "credits": "3"
+        },
+        {
+          "course": "Operating Systems",
+          "credits": "3"
+        }
+      ],
+      "curriculum_ar": [
+        {
+          "course": "مقدمة في البرمجة",
+          "credits": "3"
+        },
+        {
+          "course": "هياكل البيانات",
+          "credits": "3"
+        },
+        {
+          "course": "قواعد البيانات",
+          "credits": "3"
+        },
+        {
+          "course": "أنظمة التشغيل",
+          "credits": "3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+backend:
+  name: github
+  repo: mustafa-t-hassan/web-project
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "programs"
+    label: "Programs"
+    format: "json"
+    files:
+      - file: "content/programs.json"
+        label: "Programs List"
+        name: "programs"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Degree", name: "degree", widget: "string"}
+              - {label: "Title (EN)", name: "title_en", widget: "string"}
+              - {label: "Title (AR)", name: "title_ar", widget: "string"}
+              - {label: "Overview (EN)", name: "overview_en", widget: "text"}
+              - {label: "Overview (AR)", name: "overview_ar", widget: "text"}
+              - label: "Outcomes (EN)"
+                name: "outcomes_en"
+                widget: "list"
+                field: {label: "Item", name: "item", widget: "string"}
+              - label: "Outcomes (AR)"
+                name: "outcomes_ar"
+                widget: "list"
+                field: {label: "عنصر", name: "item", widget: "string"}
+              - {label: "Coordinator (EN)", name: "coordinator_en", widget: "string"}
+              - {label: "Coordinator (AR)", name: "coordinator_ar", widget: "string"}
+              - label: "Curriculum (EN)"
+                name: "curriculum_en"
+                widget: "list"
+                fields:
+                  - {label: "Course", name: "course", widget: "string"}
+                  - {label: "Credits", name: "credits", widget: "string"}
+              - label: "Curriculum (AR)"
+                name: "curriculum_ar"
+                widget: "list"
+                fields:
+                  - {label: "المقرر", name: "course", widget: "string"}
+                  - {label: "الوحدات", name: "credits", widget: "string"}
+
+  - name: "faculty"
+    label: "Faculty"
+    format: "json"
+    files:
+      - file: "content/faculty.json"
+        label: "Faculty List"
+        name: "faculty"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name (EN)", name: "name_en", widget: "string"}
+              - {label: "Name (AR)", name: "name_ar", widget: "string"}
+              - {label: "Title (EN)", name: "title_en", widget: "string"}
+              - {label: "Title (AR)", name: "title_ar", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Office (EN)", name: "office_en", widget: "string"}
+              - {label: "Office (AR)", name: "office_ar", widget: "string"}
+              - label: "Research Areas"
+                name: "research"
+                widget: "list"
+                field: {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image"}
+              - {label: "Bio (EN)", name: "bio_en", widget: "text"}
+              - {label: "Bio (AR)", name: "bio_ar", widget: "text"}
+
+  - name: "news"
+    label: "News"
+    format: "json"
+    files:
+      - file: "content/news.json"
+        label: "News List"
+        name: "news"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "ID/Slug", name: "id", widget: "string"}
+              - {label: "Title (EN)", name: "title_en", widget: "string"}
+              - {label: "Title (AR)", name: "title_ar", widget: "string"}
+              - {label: "Date (YYYY-MM-DD)", name: "date", widget: "string"}
+              - {label: "Summary (EN)", name: "summary_en", widget: "text"}
+              - {label: "Summary (AR)", name: "summary_ar", widget: "text"}
+              - {label: "Hero Image", name: "hero", widget: "image"}
+              - {label: "Body (EN)", name: "body_en", widget: "text"}
+              - {label: "Body (AR)", name: "body_ar", widget: "text"}
+
+  - name: "events"
+    label: "Events"
+    format: "json"
+    files:
+      - file: "content/events.json"
+        label: "Events List"
+        name: "events"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "ID/Slug", name: "id", widget: "string"}
+              - {label: "Title (EN)", name: "title_en", widget: "string"}
+              - {label: "Title (AR)", name: "title_ar", widget: "string"}
+              - {label: "Start (YYYY-MM-DD HH:mm)", name: "start", widget: "string"}
+              - {label: "End (YYYY-MM-DD HH:mm)", name: "end", widget: "string", required: false}
+              - {label: "Location (EN)", name: "location_en", widget: "string"}
+              - {label: "Location (AR)", name: "location_ar", widget: "string"}
+              - {label: "Summary (EN)", name: "summary_en", widget: "text"}
+              - {label: "Summary (AR)", name: "summary_ar", widget: "text"}
+              - {label: "Body (EN)", name: "body_en", widget: "text"}
+              - {label: "Body (AR)", name: "body_ar", widget: "text"}

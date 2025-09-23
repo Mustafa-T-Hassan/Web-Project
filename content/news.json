@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "id": "news-2025-09-01",
+      "title_en": "CS Students Win Hackathon",
+      "title_ar": "طلاب علوم الحاسوب يفوزون بالهاكاثون",
+      "date": "2025-09-01",
+      "summary_en": "Our students won first place in the national hackathon.",
+      "summary_ar": "حصل طلابنا على المركز الأول في الهاكاثون الوطني.",
+      "hero": "assets/img/placeholder.png",
+      "body_en": "The team developed an AI-powered campus navigator within 24 hours.",
+      "body_ar": "طوّر الفريق نظام ملاحة داخل الحرم الجامعي مدعّماً بالذكاء الاصطناعي خلال 24 ساعة."
+    }
+  ]
+}

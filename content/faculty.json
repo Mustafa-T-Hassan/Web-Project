@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "wisam-abdullah",
+      "name_en": "Wisam Dawood Abdullah",
+      "name_ar": "وسام داود عبد الله",
+      "title_en": "Assistant Professor of Computer Science",
+      "title_ar": "أستاذ مساعد في علوم الحاسوب",
+      "email": "wisam@example.edu",
+      "office_en": "Room 301, CS Building",
+      "office_ar": "الغرفة 301، مبنى علوم الحاسوب",
+      "research": [
+        "IoT",
+        "AI/ML",
+        "Networks"
+      ],
+      "photo": "assets/img/placeholder.png",
+      "bio_en": "Researcher in Internet of Things, Machine Learning, and networked systems. Supervises multiple theses.",
+      "bio_ar": "باحث في إنترنت الأشياء والتعلم الآلي والأنظمة الشبكية. يشرف على عدة رسائل علمية."
+    }
+  ]
+}

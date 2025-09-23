@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS Dept</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  
+<header class="header">
+  <div class="container row">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/img/logo.svg" alt="CS Department Logo" />
+      <strong>CS Department</strong>
+    </a>
+    <nav aria-label="Primary">
+      <a href="programs.html" data-i18n="nav_programs">Programs</a>
+      <a href="faculty.html" data-i18n="nav_faculty">Faculty</a>
+      <a href="news.html" data-i18n="nav_news">News</a>
+      <a href="events.html" data-i18n="nav_events">Events</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      <a href="admin/" style="font-weight:600; text-decoration:underline">Admin</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button id="lang-en" type="button" aria-pressed="false">EN</button>
+      <button id="lang-ar" type="button" aria-pressed="false">AR</button>
+    </div>
+  </div>
+</header>
+
+  <main class="container">
+    <label for="global-search" class="sr-only" data-i18n="search_label">Search</label>
+    <input id="global-search" type="search" placeholder="" data-i18n-placeholder="search_placeholder" />
+    <div id="search-results" style="margin:12px 0;"></div>
+    <section class="hero">
+      <h1 data-i18n="contact_title">contact_title</h1>
+    </section>
+    
+  <p class="lead" data-i18n="contact_lead">Send us a message…</p>
+  <form id="contact-form" style="max-width:680px;">
+    <label data-i18n="form_name" for="name">Your name</label>
+    <input id="name" name="name" type="text" required>
+    <label data-i18n="form_email" for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+    <label data-i18n="form_message" for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+    <button class="primary" type="submit" data-i18n="form_send">Send</button>
+  </form>
+
+  </main>
+  
+<footer class="footer">
+  <div class="container row">
+    <p>&copy; <span id="year"></span> CS Department</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </div>
+</footer>
+
+  <script type="module">
+    import { boot } from './assets/js/app.js';
+    document.addEventListener('DOMContentLoaded', boot);
+  </script>
+</body>
+</html>

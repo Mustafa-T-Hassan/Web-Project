@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "event-2025-09-28-seminar",
+      "title_en": "AI & IoT Research Seminar",
+      "title_ar": "ندوة بحثية حول الذكاء الاصطناعي وإنترنت الأشياء",
+      "start": "2025-09-28 10:00",
+      "end": "2025-09-28 12:00",
+      "location_en": "Auditorium A",
+      "location_ar": "القاعة أ",
+      "summary_en": "Guest speakers present cutting-edge research in AI for IoT devices.",
+      "summary_ar": "متحدثون ضيوف يقدمون أبحاثاً متقدمة في الذكاء الاصطناعي لأجهزة إنترنت الأشياء.",
+      "body_en": "Join faculty and industry experts to explore the latest methods.",
+      "body_ar": "انضموا إلى الأساتذة وخبراء الصناعة لاستكشاف أحدث الأساليب."
+    }
+  ]
+}
