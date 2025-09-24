@@ -20,7 +20,39 @@
       <a href="news.html" data-i18n="nav_news">News</a>
       <a href="events.html" data-i18n="nav_events">Events</a>
       <a href="contact.html" data-i18n="nav_contact">Contact</a>
-      <a href="admin/" style="font-weight:600; text-decoration:underline">Admin</a>
+      <a id="loginBtn" style="font-weight:600; text-decoration:underline">Admin</a>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAuth, signInWithPopup, GithubAuthProvider } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+    // 🔹 Replace with your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAR9Y0j4jWW5DQnajjrUz-4c86_z4r8uA",
+      authDomain: "web-project-6395d.firebaseapp.com",
+      projectId: "web-project-6395d",
+      storageBucket: "web-project-6395d.firebasestorage.app",
+      messagingSenderId: "497165622377",
+      appId: "1:497165622377:web:efbfb893cfe135f1ec96f8",
+      measurementId: "G-PF403FWV6Z"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GithubAuthProvider();
+
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      signInWithPopup(auth, provider)
+        .then(result => {
+          const user = result.user;
+          alert(`Logged in as ${user.displayName} (${user.email})`);
+        })
+        .catch(err => {
+          console.error(err);
+          alert("Login failed: " + err.message);
+        });
+    });
+  </script>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button id="lang-en" type="button" aria-pressed="false">EN</button>
